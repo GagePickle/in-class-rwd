@@ -2,6 +2,20 @@
 
 ## Overview
 
+```javascript
+const x = 3
+if (x > 4) {
+  return "hello"
+}
+else {
+  return "goodbye"
+}
+```
+# Hello my name is Gage Pickle, and I'm a Web Development student at South Western Illinois College
+[My Github](https://github.com/GagePickle)
+
+[![Image of me](https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/61590927_2495592557118607_8114093571843293184_n.jpg?_nc_cat=107&_nc_sid=7aed08&_nc_ohc=NQZRgFWZKMMAX_Coc8J&_nc_ht=scontent-ort2-1.xx&oh=12074ff579b7d73e69c23a83354dadb8&oe=5F6C2667)](https://github.com/GagePickle)
+
 This template repository contains several opinionated, 'starter' files and settings to help students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
 
 In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
