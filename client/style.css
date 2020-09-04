@@ -106,9 +106,16 @@ nav > a:visited {
 /*  JS classes */
 .is-collapsed {
     height: 0;
-    padding: 0;
+    opacity: 0;
     transform: scaleY(0);
-    transition: all cubic-bezier(0.165, 0.84, 0.44, 1)0.4s;
+    transition: all 0.4s linear;
+}
+
+.is-expanded {
+    height: 50vh;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all 0.4s linear;
 }
 
 #cta {
