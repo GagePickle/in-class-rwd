@@ -6,10 +6,12 @@ body {
     font-family: 'Arimo', sans-serif;
     font-size: 20px;
     line-height: 1.15;
+    padding: 1rem 0;
 }
 
 h1 {
     font-size: 3.052em;
+    margin: 0;
 }
 
 h2 {
@@ -25,11 +27,46 @@ p {
     font-size: 1.25em;
 }
 
-.fas {
-    font-size: 2.5em;
+nav {
+    padding: 2rem 1rem;
 }
 
-/* Utility Classes */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+
+  /* mouse over link */
+  a:hover {
+    color: black;
+  }
+
+  /* selected link */
+  a:active {
+    color: black
+  }
+
+.fas {
+    font-size: 2.5em;
+}/* Utility Classes */
 .flex {
     display: flex;
 }
