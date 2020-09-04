@@ -42,27 +42,39 @@ li {
 
 a {
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+  /* Direct child selector */
+nav > a {
+    border: solid thin var(--primary-color);
+    padding: 1rem 1.5rem;
 }
 
 /* unvisited link */
 a:link {
     color: black;
-  }
+}
 
   /* visited link */
-  a:visited {
+a:visited {
     color: black;
-  }
+}
 
   /* mouse over link */
-  a:hover {
+a:hover {
     color: black;
-  }
+}
 
   /* selected link */
-  a:active {
-    color: black
-  }
+a:active {
+    color: black;
+
+
+nav > a:link,
+nav > a:visited {
+    color: var(--primary-color);
+}
 
 .fas {
     font-size: 2.5em;
