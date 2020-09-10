@@ -26,7 +26,7 @@
   "javascript.validate.enable": false,
   "stylelint.enable": true,
   "terminal.integrated.fontFamily": "'Inconsolata', monospace",
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Night Owl",
   "workbench.enableExperiments": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.view.alwaysShowHeaderActions": true
