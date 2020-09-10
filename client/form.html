@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>PROFI</title>
+  </head>
+
+  <body>
+    <header class="flex flex--align-center flex--justify-space-around">
+      <h1>PROFI</h1>
+      <span class="fas fa-hamburger"></span>
+    </header>
+
+    <nav class="is-expanded">
+      <ul>
+        <li><a href="./form.html">Form</a></li>
+        <li><a href="#">Lawyer</a></li>
+        <li><a href="#">Contractor</a></li>
+      </ul>
+      <a href="#" class="button">Buy Template</a>
+    </nav>
+
+    <form action="">
+      <div><label for="name">Name</label><input type="text" id="name" /></div>
+      <div>
+        <label for="email">Email</label><input type="email" id="email" />
+      </div>
+      <div>
+        <label for="phone">Phone #</label><input type="tel" id="phone" />
+      </div>
+      <div>
+        <label for="profilePic"></label><input type="file" id="profilePic" />
+      </div>
+
+      <button>Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
