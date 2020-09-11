@@ -1,7 +1,8 @@
 :root {
   --primary-color: #3db36b;
-  --secondary-color: #6898FF;
-  --warning-color: #E9860C;
+  --secondary-color: #6898ff;
+  --warning-color: #e9860c;
+  --danger-color: #ff625c;
 }
 
 body {
@@ -147,11 +148,19 @@ nav > a:visited {
   transition: all 0.4s linear;
 }
 
+.is-error {
+  border: solid thin var(--danger-color);
+}
+
 .is-expanded {
   height: 50vh;
   opacity: 1;
   transform: scaleY(1);
   transition: all 0.4s linear;
+}
+
+.is-success {
+  border: solid thin var(--primary-color);
 }
 
 #cta {
