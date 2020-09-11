@@ -1,5 +1,7 @@
 :root {
   --primary-color: #3db36b;
+  --secondary-color: #6898FF;
+  --warning-color: #E9860C;
 }
 
 body {
@@ -27,8 +29,14 @@ p {
   font-size: 1.25em;
 }
 
-nav {
+nav,
+form {
   padding: 2rem 1rem;
+}
+
+form {
+  margin: 0 auto;
+  width: 80vw;
 }
 
 ul {
@@ -43,6 +51,11 @@ li {
 a {
   text-decoration: none;
   text-transform: uppercase;
+}
+
+input {
+  margin: 0.5rem 0;
+  width: 100%;
 }
 
 /* Direct child selector */
@@ -86,9 +99,25 @@ nav > a:visited {
 .button {
   /* 'inline-block' will keep default of 'inline'
     while allowing for veritcal margin */
+  border: none;
+  border-radius: 4px;
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   padding: 1rem 1.5rem;
+}
+
+.button:not(:first-of-type) {
+  margin: 0 0.5rem;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+.button--warning {
+  background-color: var(--warning-color);
 }
 
 .flex {
@@ -103,19 +132,26 @@ nav > a:visited {
   justify-content: space-around;
 }
 
+/* Form */
+.screen-reader-text {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
 /*  JS classes */
 .is-collapsed {
-    height: 0;
-    opacity: 0;
-    transform: scaleY(0);
-    transition: all 0.4s linear;
+  height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.4s linear;
 }
 
 .is-expanded {
-    height: 50vh;
-    opacity: 1;
-    transform: scaleY(1);
-    transition: all 0.4s linear;
+  height: 50vh;
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 0.4s linear;
 }
 
 #cta {
