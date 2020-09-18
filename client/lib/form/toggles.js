@@ -1,5 +1,7 @@
-const x = "toggle";
+const form = document.querySelector("form");
+
+const fields = form.querySelectorAll("div:not(:last-of-type)");
 
 export default () => {
-  console.log(x);
+  console.log(fields);
 };
